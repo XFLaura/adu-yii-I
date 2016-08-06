@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\AduDeveloper */
 
-$this->title = 'Create Adu Developer';
+$this->title = '创建开发者信息';
 $this->params['breadcrumbs'][] = ['label' => 'Adu Developers', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

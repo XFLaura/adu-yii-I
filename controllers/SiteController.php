@@ -11,7 +11,7 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
-    public function behaviors()
+    /*public function behaviors()
     {
         return [
             'access' => [
@@ -33,7 +33,7 @@ class SiteController extends Controller
             ],
         ];
     }
-
+*/
     public function actions()
     {
         
@@ -50,12 +50,14 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        
-        return $this->render('index');
+        $msg = 'Index test';
+        return $this->render('index',['msg'=>$msg]);
     }
 
     public function actionLogin()
     {
+        //声明模版文件
+        $this->layout ='login.php';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }

@@ -12,11 +12,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="adu-developer-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('创建开放者信息', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('创建开发者信息', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

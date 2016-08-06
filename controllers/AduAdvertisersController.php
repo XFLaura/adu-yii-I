@@ -17,6 +17,7 @@ class AduAdvertisersController extends Controller
     /**
      * @inheritdoc
      */
+    /*
     public function behaviors()
     {
         return [
@@ -27,7 +28,7 @@ class AduAdvertisersController extends Controller
                 ],
             ],
         ];
-    }
+    }*/
 
     /**
      * Lists all AduAdvertisers models.

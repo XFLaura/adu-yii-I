@@ -12,11 +12,8 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="adu-advertisers-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
     <p>
-        <?= Html::a('Create Adu Advertisers', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('创建广告主信息', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
